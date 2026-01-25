@@ -22,7 +22,7 @@ MLX-GUI is a **production-ready** lightweight RESTful wrapper around Apple's MLX
 - **🧠 MLX Engine Integration** - Native Apple Silicon acceleration via MLX
 - **🎙️ Advanced Audio Intelligence** - Complete Whisper & Parakeet support with multi-format processing
 - **🔢 Production Embeddings** - Multi-architecture support (BGE, MiniLM, Qwen3, Arctic, E5)
-- **🖼️ Vision Models** - Image understanding with Gemma-3n, Qwen2-VL, Mistral Small
+- **🖼️ Vision Models** - Image understanding with Gemma-3n, Qwen2-VL & Qwen3-VL, Mistral Small
 - **🤖 Large Language Models** - Full support for instruction-tuned and reasoning models
 
 ### 🛠️ **Enterprise-Grade Infrastructure**
@@ -108,7 +108,7 @@ Critical features include checking system RAM before loading models with clear e
 
 ### Vision Models
 - **Gemma-3n**: Native vision capabilities
-- **Qwen2-VL**: Advanced multimodal understanding
+- **Qwen2-VL & Qwen3-VL**: Advanced multimodal understanding
 - **Mistral Small**: Vision-text capability via MLX-VLM
 
 ### Embedding Models

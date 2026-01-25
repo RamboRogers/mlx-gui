@@ -6,7 +6,7 @@ Tests all MLX model types: Text, Audio, Vision, and Embeddings
 Includes support for:
 - Text models: Qwen3, DeepSeek R1, SmolLM3 (multilingual)
 - Audio models: Parakeet (transcription)
-- Vision models: Gemma 3n, Qwen2-VL (multimodal)
+- Vision models: Gemma 3n, Qwen2-VL & Qwen-VL (multimodal)
 - Embedding models: Qwen3 embeddings
 """
 
@@ -160,7 +160,7 @@ class MLXTestSuite:
                         model_id_lower = model_id.lower()
                         if any(keyword in model_id_lower for keyword in ["parakeet", "whisper", "speech", "tdt"]):
                             model_type = "audio"
-                        elif any(keyword in model_id_lower for keyword in ["3n", "vlm", "vision", "vl-", "multimodal", "qwen2-vl", "gemma-3", "gemma3", "mistral-small"]):
+                        elif any(keyword in model_id_lower for keyword in ["3n", "vlm", "vision", "vl-", "multimodal", "qwen2-vl", "qwen3-vl", "gemma-3", "gemma3", "mistral-small"]):
                             model_type = "vision"
                         elif any(keyword in model_id_lower for keyword in ["embedding", "qwen3-embedding", "bge", "minilm"]):
                             model_type = "embedding"
@@ -517,7 +517,7 @@ class MLXTestSuite:
             return False
 
     async def test_vision_generation(self, model_name: str, model_label: str) -> bool:
-        """Test vision generation with image input - specifically for Gemma 3n and Qwen2-VL."""
+        """Test vision generation with image input - specifically for Gemma 3n, Qwen2-VL and Qwen3-VL."""
         print(f"\n🖼️  Testing Vision Generation - {model_label}")
 
         if not model_name:
@@ -550,6 +550,9 @@ class MLXTestSuite:
             elif "qwen2" in model_name.lower():
                 prompt = "Describe the color of this image in one word."
                 model_info = " (Qwen2-VL vision)"
+            elif "qwen3" in model_name.lower():
+                prompt = "Describe the color of this image in one word."
+                model_info = " (Qwen3-VL vision)"
             else:
                 prompt = "What color is this image? Answer in one word."
                 model_info = " (Vision model)"
@@ -739,7 +742,7 @@ class MLXTestSuite:
         else:
             self.add_result(ModelTestResult("Embedding Generation (MiniLM)", False, "MiniLM embedding model not available"))
 
-        # Test vision generation (Gemma 3n, Qwen2-VL)
+        # Test vision generation (Gemma 3n, Qwen2-VL, Qwen3-VL)
         print("\n👁️  Vision Generation Tests")
         print("-" * 30)
         for model_key, model_name in actual_test_models["vision"].items():

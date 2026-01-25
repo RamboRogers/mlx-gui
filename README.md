@@ -172,7 +172,7 @@ Basic Features of MLX-GUI like auto model loading, model management, and API are
 - **🧠 MLX Engine Integration** - Native Apple Silicon acceleration via MLX
 - **🎙️ Advanced Audio Intelligence** - Complete Whisper & Parakeet support with multi-format processing
 - **🔢 Production Embeddings** - Multi-architecture support (BGE, MiniLM, Qwen3, Arctic, E5)
-- **🖼️ Vision Models** - Image understanding with Gemma-3n, Qwen2-VL, Mistral Small (enhanced stability)
+- **🖼️ Vision Models** - Image understanding with Gemma-3n, Qwen2-VL & Qwen3-VL, Mistral Small (enhanced stability)
 - **🤖 Large Language Models** - Full support for instruction-tuned and reasoning models
 
 ### 🛠️ **Enterprise-Grade Infrastructure**

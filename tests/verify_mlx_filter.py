@@ -28,6 +28,7 @@ def test_mlx_library_filter():
         known_mlx_models = [
             "mlx-community/gemma-3n-E4B-it-bf16",
             "mlx-community/Qwen2-VL-2B-Instruct-4bit", 
+            "mlx-community/Qwen3-VL-8B-Instruct-4bit",
             "lmstudio-community/DeepSeek-R1-0528-Qwen3-8B-MLX-4bit"
         ]
         
