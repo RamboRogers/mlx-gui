@@ -15,6 +15,10 @@
 [![Apple Silicon](https://img.shields.io/badge/Apple%20Silicon-Required-orange.svg)](https://support.apple.com/en-us/HT211814)
 [![MLX Compatible](https://img.shields.io/badge/MLX-Compatible-green.svg)](https://github.com/ml-explore/mlx)
 
+> **⚠️ This project has been discontinued.**
+>
+> We recommend **[omlx.ai](https://omlx.ai/)** as a better-maintained alternative with everything MLX-GUI offered and more.
+
 <div align="center">
 <img src="media/video.gif" >
 </div>
