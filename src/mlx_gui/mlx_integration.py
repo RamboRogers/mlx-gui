@@ -1432,7 +1432,7 @@ class MLXLoader:
 
         # Vision/multimodal models - includes Gemma 3 vision variants
         if any(keyword in path_lower for keyword in [
-            "vision", "vlm", "multimodal", "llava", "qwen2-vl", "idefics",
+            "vision", "vlm", "multimodal", "llava", "qwen2-vl", "qwen3-vl", "idefics",
             "gemma-3n", "gemma3n"  # Gemma 3 vision variants use MLX-VLM
         ]):
             return "vision"

@@ -862,6 +862,7 @@ MLX-GUI now supports vision and multimodal models using MLX-VLM for image unders
 #### Supported Vision Models
 
 - **Qwen2-VL series**: `mlx-community/Qwen2-VL-2B-Instruct-4bit`, `mlx-community/Qwen2-VL-7B-Instruct-4bit`
+- **Qwen3-VL series**: `mlx-community/Qwen3-VL-8B-Instruct-4bit`, `mlx-community/Qwen3-VL-8B-Instruct-8bit`
 - **LLaVA models**: Various LLaVA variants optimized for MLX
 - **Idefics3**: Multi-modal conversation models
 - **Gemma-3 Vision**: `mlx-community/gemma-3n-E4B-it-bf16` and related models
@@ -1006,7 +1007,7 @@ Vision models return the same OpenAI-compatible response format as text models:
 
 MLX-GUI automatically detects vision models based on:
 
-- Model path containing keywords: `vision`, `vlm`, `multimodal`, `llava`, `qwen2-vl`, `idefics`, `gemma-3`
+- Model path containing keywords: `vision`, `vlm`, `multimodal`, `llava`, `qwen2-vl`, `qwen3-vl`, `idefics`, `gemma-3`
 - Model architecture in `config.json`
 - Model type metadata
 
